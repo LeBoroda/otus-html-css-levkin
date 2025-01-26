@@ -1,0 +1,125 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts\\Roboto-Bold.ttf") format("ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts\\Roboto-Medium.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts\\PlayfairDisplay-Medium.ttf") format("ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts\\PlayfairDisplay-SemiBold.ttf") format("ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Bitter";
+    src: url("fonts\\Bitter-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+body {
+    font-family: "Roboto", "Playfair Display", "Bitter", sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.header-menu,
+.footer-logo,
+.biography-position-skills,
+.footer-logo-name,
+.footer-contacts,
+.footer-pricing,
+.section-header,
+.hero-section-description,
+.tile-info-header,
+.tile-info-text {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.header-menu,
+.footer-logo-name,
+.section-header {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.172;
+}
+
+.footer-logo,
+.biography-position-skills {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.172;
+}
+
+.footer-contacts,
+.footer-pricing,
+.tile-info-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.172;
+}
+
+.footer-contacts {
+    line-height: 1.625;
+}
+
+.footer-pricing {
+    text-align: right;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-size: 86px;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    font-size: 86px;
+}
+
+.quote {
+    font-family: "Bitter", serif;
+    font-weight: 400;
+}
+
+.first-quote {
+    font-size: 26px;
+}
+
+.second-quote {
+    font-size: 32px;
+}
+
+.strength-list {
+    font-size: 34px;
+}
+
+.hero-section-description {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.tile-info-header {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.designer-name {
+    text-transform: uppercase;
+}
