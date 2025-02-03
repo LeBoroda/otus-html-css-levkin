@@ -40,8 +40,7 @@ body {
 .footer-logo-name,
 .footer-contacts,
 .footer-pricing,
-.section-header,
-.hero-section-description,
+.hero-section-text,
 .tile-info-header,
 .tile-info-text {
     font-family: "Roboto", serif;
@@ -51,8 +50,7 @@ body {
 }
 
 .header-menu,
-.footer-logo-name,
-.section-header {
+.footer-logo-name {
     font-weight: 700;
     font-size: 24px;
     line-height: 1.172;
@@ -93,6 +91,16 @@ h2 {
     font-size: 86px;
 }
 
+h3{
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.172;
+}
+
 .quote {
     font-family: "Bitter", serif;
     font-weight: 400;
@@ -110,7 +118,7 @@ h2 {
     font-size: 34px;
 }
 
-.hero-section-description {
+.hero-section-text {
     font-weight: 500;
     font-size: 20px;
 }
