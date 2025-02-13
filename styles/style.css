@@ -35,7 +35,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 1440px;
-    margin: 0 auto;
 }
 
 .header-menu,
@@ -145,6 +144,7 @@ header {
     padding: 20px;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -17px;
 }
 
 .header-nav {
@@ -153,10 +153,10 @@ header {
 
 .header-menu {
     display: flex;
-    gap: 20px;
+    gap: 48px;
     list-style-type: none;
     justify-content: end;
-    margin: 20px;
+    margin: 15px;
 }
 
 .header-menu-item>a {
@@ -169,13 +169,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
-.hero-section-image.hero{
+.hero-section-image.hero {
     z-index: 0;
     width: 100vw;
     min-height: 630px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 .hero-section-content {
@@ -194,5 +195,62 @@ header {
 }
 
 .hero-section-header {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+}
+
+.biography-section {
+    display: flex;
+    max-width: 1165px;
+    border: 1px solid white;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.biography-section-image {
+    width: 49%;
+    object-fit: cover;
+    order:0;
+}
+
+.biography-section-content {
+    width: 39%;
+    order:2;
+    display: flex;
+    flex-direction: column;
+}
+.biography-section-content>h2 {
+    max-width: 230px;
+    margin: 180px 0 55px;
+}
+.biography-position{
+    margin: 0;
+}
+.biography-skills{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+}
+.black_rectangle{
+    margin: 30px 0 20px;
+    width:20px;
+    height:6px;
+    background-color: black;
+}
+
+.quote.first-quote {
+    margin: 0;
+}
+
+.biography-section-header{
+    order:1;
+    flex-grow:1;
+}
+
+.biography-header-text {
+    transform: rotate(-90deg) translateX(-17%) translateY(-79%);
+    margin: 0;
+
 }
