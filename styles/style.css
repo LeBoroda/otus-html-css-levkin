@@ -209,23 +209,26 @@ header {
 .biography-section-image {
     width: 49%;
     object-fit: cover;
-    order:0;
+    order: 0;
 }
 
 .biography-section-content {
     width: 39%;
-    order:2;
+    order: 2;
     display: flex;
     flex-direction: column;
 }
+
 .biography-section-content>h2 {
     max-width: 230px;
     margin: 180px 0 55px;
 }
-.biography-position{
+
+.biography-position {
     margin: 0;
 }
-.biography-skills{
+
+.biography-skills {
     margin: 0;
     padding: 0;
     display: flex;
@@ -233,10 +236,11 @@ header {
     gap: 10px;
     list-style-type: none;
 }
-.black_rectangle{
+
+.black_rectangle {
     margin: 30px 0 20px;
-    width:20px;
-    height:6px;
+    width: 20px;
+    height: 6px;
     background-color: black;
 }
 
@@ -244,13 +248,74 @@ header {
     margin: 0;
 }
 
-.biography-section-header{
-    order:1;
-    flex-grow:1;
+.biography-section-header {
+    order: 1;
+    flex-grow: 1;
 }
 
 .biography-header-text {
     transform: rotate(-90deg) translateX(-17%) translateY(-79%);
     margin: 0;
+}
 
+.testimonials-section {
+    display: grid;
+    width: 1400px;
+    height: 760px;
+    box-sizing: border-box;
+    grid-template-columns: 119px 1fr;
+    border: 1px solid transparent;
+    margin: 150px 0;
+}
+
+.testimonials-section-frame {
+    grid-column: 2;
+    display: flex;
+    box-sizing: border-box;
+    grid-template-columns: 569px 28px 451px;
+}
+
+.testimonials-section-header {
+    order: 1;
+    grid-column: 2/3;
+}
+
+.testimonials-section-header-text {
+    transform: rotate(-90deg) translateX(0%) translateY(0%);
+}
+
+.testimonials-section-links-section {
+    order: 0;
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 98px 1fr;
+}
+
+.testimonials-section-content {
+    order: 2;
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 221px 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.testimonials-section-links {
+    display: grid;
+    grid-template-rows: repeat(3, 190px);
+    gap: 20px;
+    grid-template-columns: 1fr 190px;
+}
+.link-tile {
+    transform: rotate(-90deg);
+    grid-column: 2/3;
+    margin: 20px;
+}
+.second-quote {
+    box-sizing: border-box;
+    margin: 0;
+    grid-column: 2/3;
+}
+
+.second-quote+img {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
