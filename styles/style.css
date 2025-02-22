@@ -34,7 +34,6 @@ body {
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
 }
 
 .header-menu,
@@ -174,6 +173,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 150px;
+    max-width: 1400px;
 }
 
 .hero-section-image.hero {
