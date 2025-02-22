@@ -34,7 +34,6 @@ body {
     line-height: 1.2;
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
 }
 
 .header-menu,
@@ -162,6 +161,10 @@ header {
 .header-menu-item>a {
     text-decoration: none;
     color: #000000;
+}
+
+.hero-section {
+    max-width: 1440px;
 }
 
 .hero-section {
