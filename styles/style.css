@@ -138,6 +138,7 @@ h3 {
 
 .designer-name {
     text-transform: uppercase;
+    margin: 0;
 }
 
 header {
@@ -172,13 +173,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     margin-bottom: 150px;
     max-width: 1400px;
 }
 
 .hero-section-image.hero {
     z-index: 0;
-    width: 100vw;
     min-height: 630px;
     object-fit: contain;
 }
@@ -207,6 +208,7 @@ header {
     max-width: 1165px;
     margin: auto;
     box-sizing: border-box;
+    margin-bottom: 125px;
 }
 
 .biography-section-image {
@@ -266,7 +268,7 @@ header {
     max-width: 1400px;
     box-sizing: border-box;
     grid-template-columns: 119px 1fr;
-    margin: 150px 0;
+    margin: auto;
 }
 
 .testimonials-section-frame {
@@ -323,3 +325,46 @@ header {
     grid-column: 2/3;
     grid-row: 2/3;
 }
+
+.designers-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 677px;
+    margin-left: 40px;
+    margin-bottom: 140px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.designers-tiles-section {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    height: 619px;
+    gap: 20px;
+    align-items: flex-end;
+}
+.designers-section-title{
+    order: 0;
+    margin-left: 130px;
+}
+.designers-section-header-text {
+    margin-bottom: 0;
+}
+.designer-tile {
+    display: flex;
+    flex-direction: column;
+    }
+
+.designer-info-tile {
+    order: 1;
+    width: 332px;
+}
+
+.designer-tile-pic {
+    margin-bottom: 15px;
+}
+.big-pic-tile {
+    align-items: flex-end;
+}
+
