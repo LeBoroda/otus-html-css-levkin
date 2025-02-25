@@ -123,6 +123,11 @@ h3 {
 
 .strength-list {
     font-size: 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section-text {
@@ -269,6 +274,7 @@ header {
     box-sizing: border-box;
     grid-template-columns: 119px 1fr;
     margin: auto;
+    margin-bottom: 140px;
 }
 
 .testimonials-section-frame {
@@ -331,7 +337,7 @@ header {
     flex-direction: column;
     min-height: 677px;
     margin-left: 40px;
-    margin-bottom: 140px;
+    margin-bottom: 130px;
     gap: 20px;
     overflow-x: auto;
 }
@@ -342,19 +348,21 @@ header {
     flex-direction: row;
     height: 619px;
     gap: 20px;
-    align-items: flex-end;
 }
-.designers-section-title{
+
+.designers-section-title {
     order: 0;
     margin-left: 130px;
 }
+
 .designers-section-header-text {
     margin-bottom: 0;
 }
+
 .designer-tile {
     display: flex;
     flex-direction: column;
-    }
+}
 
 .designer-info-tile {
     order: 1;
@@ -364,7 +372,54 @@ header {
 .designer-tile-pic {
     margin-bottom: 15px;
 }
+
 .big-pic-tile {
     align-items: flex-end;
 }
 
+.strong-points-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-bottom: 140px;
+}
+
+.strong-points-section-container {
+    order: 1;
+    margin-left: 10px;
+}
+
+.strong-points-section-header {
+    order: 0;
+    margin-left: 255px;
+}
+.strong-points-section-content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    height: 555px;
+}
+.strong-points-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0px 50px;
+}
+
+.strong-points-text>h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.strong-points-pic {
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
