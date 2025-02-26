@@ -393,6 +393,7 @@ header {
     order: 0;
     margin-left: 255px;
 }
+
 .strong-points-section-content {
     display: flex;
     flex-direction: row;
@@ -401,6 +402,7 @@ header {
     gap: 20px;
     height: 555px;
 }
+
 .strong-points-text {
     display: flex;
     flex-direction: column;
