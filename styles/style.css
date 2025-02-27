@@ -348,6 +348,7 @@ header {
     flex-direction: row;
     height: 619px;
     gap: 20px;
+    align-items: flex-end;
 }
 
 .designers-section-title {
@@ -396,11 +397,12 @@ header {
 
 .strong-points-section-content {
     display: flex;
-    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     gap: 20px;
     height: 555px;
+
+
 }
 
 .strong-points-text {
