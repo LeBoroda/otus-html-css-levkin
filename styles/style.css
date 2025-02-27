@@ -123,6 +123,11 @@ h3 {
 
 .strength-list {
     font-size: 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section-text {
@@ -138,13 +143,14 @@ h3 {
 
 .designer-name {
     text-transform: uppercase;
+    margin: 0;
 }
 
 header {
     display: flex;
     height: 135px;
     max-width: 100vw;
-    padding: 20px;
+    padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -17px;
@@ -172,13 +178,13 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: auto;
     margin-bottom: 150px;
     max-width: 1400px;
 }
 
 .hero-section-image.hero {
     z-index: 0;
-    width: 100vw;
     min-height: 630px;
     object-fit: contain;
 }
@@ -207,6 +213,7 @@ header {
     max-width: 1165px;
     margin: auto;
     box-sizing: border-box;
+    margin-bottom: 125px;
 }
 
 .biography-section-image {
@@ -266,7 +273,8 @@ header {
     max-width: 1400px;
     box-sizing: border-box;
     grid-template-columns: 119px 1fr;
-    margin: 150px 0;
+    margin: auto;
+    margin-bottom: 140px;
 }
 
 .testimonials-section-frame {
@@ -322,4 +330,121 @@ header {
 .second-quote+img {
     grid-column: 2/3;
     grid-row: 2/3;
+}
+
+.designers-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 677px;
+    margin-left: 40px;
+    margin-bottom: 130px;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.designers-tiles-section {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    height: 619px;
+    gap: 20px;
+    align-items: flex-end;
+}
+
+.designers-section-title {
+    order: 0;
+    margin-left: 130px;
+}
+
+.designers-section-header-text {
+    margin-bottom: 0;
+}
+
+.designer-tile {
+    display: flex;
+    flex-direction: column;
+}
+
+.designer-info-tile {
+    order: 1;
+    width: 332px;
+}
+
+.designer-tile-pic {
+    margin-bottom: 15px;
+}
+
+.big-pic-tile {
+    align-items: flex-end;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.strong-points-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-left: 40px;
+    margin-bottom: 140px;
+}
+
+.strong-points-section-container {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-left: 10px;
+}
+
+.strong-points-section-header {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    margin-left: 255px;
+}
+
+.strong-points-section-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    height: 555px;
+}
+
+.strong-points-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding: 0px 50px;
+}
+
+.strong-points-text>h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.strong-points-pic {
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }
