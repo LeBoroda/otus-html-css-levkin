@@ -378,6 +378,13 @@ header {
     align-items: flex-end;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .strong-points-section {
     display: -webkit-box;
     display: -ms-flexbox;
