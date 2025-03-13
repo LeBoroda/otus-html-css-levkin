@@ -378,43 +378,20 @@ header {
     align-items: flex-end;
 }
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 .strong-points-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     margin-left: 40px;
     margin-bottom: 140px;
 }
 
 .strong-points-section-container {
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
-    order: 1;
+    overflow-x: auto;
+    white-space: nowrap;
     margin-left: 10px;
 }
 
-.strong-points-section-header {
-    -webkit-box-ordinal-group: 1;
-    -ms-flex-order: 0;
-    order: 0;
-    margin-left: 255px;
-}
-
 .strong-points-section-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
     gap: 20px;
@@ -422,29 +399,52 @@ header {
 }
 
 .strong-points-text {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    padding: 0px 50px;
+    padding: 0 40px;
 }
 
-.strong-points-text>h2 {
+.strong-points-text > h2 {
     margin: 0;
     margin-bottom: 10px;
 }
 
 .strong-points-pic {
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
+}
+
+.strong-points-section,
+.strong-points-section-content,
+.strong-points-text,
+.quote.strength-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quote.strength-list {
+    align-items: center;
+    justify-content: center;
+}
+
+@supports (display: grid) {
+    .strong-points-section {
+        display: grid;
+        grid-auto-rows: max-content;
+    }
+
+    .strong-points-section-content {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .strong-points-text {
+        display: grid;
+        align-items: flex-start;
+    }
+
+    .quote.strength-list {
+        display: grid;
+        place-items: center;
+    }
 }
