@@ -123,6 +123,11 @@ h3 {
 
 .strength-list {
     font-size: 34px;
+    display: grid;
+    grid-template-columns: 1fr;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .hero-section-text {
@@ -145,7 +150,7 @@ header {
     display: flex;
     height: 135px;
     max-width: 100vw;
-    padding: 20px;
+    padding: 20px 50px;
     justify-content: space-between;
     align-items: center;
     margin-bottom: -17px;
@@ -269,6 +274,7 @@ header {
     box-sizing: border-box;
     grid-template-columns: 119px 1fr;
     margin: auto;
+    margin-bottom: 140px;
 }
 
 .testimonials-section-frame {
@@ -331,7 +337,7 @@ header {
     flex-direction: column;
     min-height: 677px;
     margin-left: 40px;
-    margin-bottom: 140px;
+    margin-bottom: 130px;
     gap: 20px;
     overflow-x: auto;
 }
@@ -344,17 +350,20 @@ header {
     gap: 20px;
     align-items: flex-end;
 }
-.designers-section-title{
+
+.designers-section-title {
     order: 0;
     margin-left: 130px;
 }
+
 .designers-section-header-text {
     margin-bottom: 0;
 }
+
 .designer-tile {
     display: flex;
     flex-direction: column;
-    }
+}
 
 .designer-info-tile {
     order: 1;
@@ -364,7 +373,78 @@ header {
 .designer-tile-pic {
     margin-bottom: 15px;
 }
+
 .big-pic-tile {
     align-items: flex-end;
 }
 
+
+.strong-points-section {
+    margin-left: 40px;
+    margin-bottom: 140px;
+}
+
+.strong-points-section-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.strong-points-section-content {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    height: 555px;
+}
+
+.strong-points-text {
+    padding: 0 40px;
+}
+
+.strong-points-text > h2 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.strong-points-pic {
+    height: 100%;
+    object-fit: cover;
+}
+
+.strong-points-section,
+.strong-points-section-content,
+.strong-points-text,
+.quote.strength-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.quote.strength-list {
+    align-items: center;
+    justify-content: center;
+}
+
+@supports (display: grid) {
+    .strong-points-section {
+        display: grid;
+        grid-auto-rows: max-content;
+    }
+
+    .strong-points-section-content {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .strong-points-text {
+        display: grid;
+        align-items: flex-start;
+    }
+
+    .quote.strength-list {
+        display: grid;
+        place-items: center;
+    }
+}
