@@ -522,6 +522,7 @@ header {
     .biography-section {
         max-width: 100%;
         flex-direction: column;
+        margin-bottom: 75px;
     }
 
     .biography-section-header {
@@ -601,5 +602,35 @@ header {
         content: "-";
         position: absolute;
         left: 3%;
+    }
+
+    .designers-section {
+        max-width: 100%;
+        max-height: 573px;
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        margin-left: 0;
+    }
+    .designers-tiles-section {
+        display: flex;
+        flex-direction: row;
+        max-height: 520px;
+        gap: 5px;
+        margin-left:25px;
+    }
+
+    .designer-tile:last-child {
+        display: none;
+    }
+    .designers-section-title {
+        margin-left: 25px;
+    }
+    .designer-tile-pic {
+        max-height: 439px;
+        max-width: 310px;
+    }
+    .designer-tile {
+        align-items: flex-start;
     }
 }
