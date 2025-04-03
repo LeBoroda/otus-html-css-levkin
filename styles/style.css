@@ -347,7 +347,7 @@ header {
     color: #000000;
 }
 
-.second-quote+img {
+.quote-pic-container {
     grid-column: 2/3;
     grid-row: 2/3;
 }
@@ -421,7 +421,7 @@ header {
     padding: 0 40px;
 }
 
-.strong-points-text > h2 {
+.strong-points-text>h2 {
     margin: 0;
     margin-bottom: 10px;
 }
@@ -504,6 +504,7 @@ header {
 
     .hero-section {
         max-height: 685px;
+        max-width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -512,17 +513,21 @@ header {
     .hero-section-image {
         max-height: 690px;
     }
+    .hero-section-image.hero {
+        left: 18px;
+    }
 
     .hero-section-content.hero {
         width: 100%;
         max-height: 303px;
-        top:80px;
+        top: 80px;
     }
 
     .biography-section {
         max-width: 100%;
         flex-direction: column;
         margin-bottom: 75px;
+        display: none;
     }
 
     .biography-section-header {
@@ -611,26 +616,73 @@ header {
         flex-direction: column;
         overflow-x: auto;
         margin-left: 0;
+        margin-bottom: 50px;
     }
+
     .designers-tiles-section {
         display: flex;
         flex-direction: row;
         max-height: 520px;
         gap: 5px;
-        margin-left:25px;
+        margin-left: 25px;
     }
 
     .designer-tile:last-child {
         display: none;
     }
+
     .designers-section-title {
         margin-left: 25px;
     }
+
     .designer-tile-pic {
         max-height: 439px;
         max-width: 310px;
     }
+
     .designer-tile {
         align-items: flex-start;
     }
+
+    .testimonials-section {
+        max-width: 100%;
+        max-height: 442px;
+        display: flex;
+        margin-bottom: 100px;
+    }
+    .testimonials-section-pic-container {
+        display: none;
+    }
+    .testimonials-section-frame{
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonials-section-header {
+        order: 0;
+        align-self: flex-end;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .testimonials-section-header-text {
+        transform: none;
+    }
+    .testimonials-section-links-section {
+        order: 2;
+        display: flex;
+        flex-direction: row;
+    }
+    .testimonials-section-links {
+        display: flex;
+        flex-direction: row;
+    }
+    .link-tile {
+        transform: none;
+    }
+
+    .testimonials-section-content {
+        order: 1;
+        display: flex;
+        flex-direction: row;
+    }
+    
 }
