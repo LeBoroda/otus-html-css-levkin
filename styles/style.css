@@ -75,6 +75,7 @@ body {
 
 .footer-contacts {
     line-height: 1.625;
+    text-transform: uppercase;
 }
 
 .footer-pricing {
@@ -484,10 +485,6 @@ footer>p>a {
     color: #ffffff;
 }
 
-.footer-contacts {
-    text-transform: uppercase;
-}
-
 .footer-pricing>a {
     text-decoration: none;
 }
@@ -822,6 +819,11 @@ footer>p>a {
     .footer-logo {
         order: -1;
         align-self: flex-end;
-        margin-right: 5px;
+        margin-right: 10px;
+    }
+
+    .footer-contacts,
+    .footer-pricing {
+        margin-left: 10px;
     }
 }
