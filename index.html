@@ -24,7 +24,9 @@
                 <li class="header-menu-item"><a href="#strong-points">Strong points</a></li>
             </ul>
         </nav>
-        <button class="message-icon"><img src="img/icons/default.png" alt="default-icon"></button>
+        <div class="header-message-icon-container">
+            <button class="message-icon"><img src="img/icons/default.png" alt="default-icon"></button>
+        </div>
     </header>
     <main>
         <section class="hero-section">
@@ -33,7 +35,10 @@
                 <p class="hero-section-text">Modern Web Studio</p>
             </div>
             <div class="hero-section-image hero">
-                <img src="img/hero-section-pic.jpg" alt="hero-section-pic">
+                <picture>
+                    <source srcset="img/tablet/hero-section-pic-tablet.png" media="(max-width: 768px)">
+                    <img src="img/hero-section-pic.jpg" alt="hero-section-pic">
+                </picture>
             </div>
         </section>
         <section class="biography-section" id="biography">
@@ -46,16 +51,17 @@
                 <div class="biography-position-skills">
                     <p class="biography-position">Art Director</p>
                     <ul class="biography-skills">
-                        <li class="biography-skills-item">Scenography / </li>
-                        <li class="biography-skills-item">Styling / </li>
-                        <li class="biography-skills-item">Creative Photography / </li>
+                        <li class="biography-skills-item">Scenography</li>
+                        <li class="biography-skills-item">Styling</li>
+                        <li class="biography-skills-item">Creative Photography</li>
                         <li class="biography-skills-item">Design</li>
                     </ul>
                 </div>
                 <div class="black_rectangle"></div>
-                <blockquote class="quote first-quote">“The more I deal with the work <br> as something that is my own,
-                    <br> as something that is personal,<br>
-                    the more successful it is.”
+                <blockquote class="quote first-quote">“The more I deal with<br class="reversive-responsive-br"> the work
+                    <br class="responsive-br"> as something that is my own,
+                    <br class="reversive-responsive-br"> as something that<br class="reversive-responsive-br"> is
+                    personal, the more successful it is.”
                 </blockquote>
             </section>
         </section>
@@ -69,7 +75,13 @@
                         <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
                             Marketing</span>
                     </article>
-                    <img src="img/jess-wonder-pic.jpg" alt="jess-wonder" class="designer-tile-pic">
+                    <div class="designer-tile-pic-container">
+                        <picture>
+                            <source srcset="img/tablet/jess-wonder-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/jess-wonder-pic.jpg" alt="jess-wonder" class="designer-tile-pic">
+                        </picture>
+
+                    </div>
                 </section>
                 <section class="designer-tile small-pic-tile">
                     <article class="designer-info-tile">
@@ -79,7 +91,12 @@
                         <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
                             Marketing</span>
                     </article>
-                    <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                    <div class="designer-tile-pic-container">
+                        <picture>
+                            <source srcset="img/tablet/kameron-clein-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                        </picture>
+                    </div>
                 </section>
                 <section class="designer-tile small-pic-tile">
                     <article class="designer-info-tile">
@@ -89,7 +106,12 @@
                         <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
                             Marketing</span>
                     </article>
-                    <img src="img/louisse-red-pic.jpg" alt="louisse-red" class="designer-tile-pic">
+                    <div class="designer-tile-pic-container">
+                        <picture>
+                            <source srcset="img\tablet\louisse-red-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/louisse-red-pic.jpg" alt="louisse-red" class="designer-tile-pic">
+                        </picture>
+                    </div>
                 </section>
                 <section class="designer-tile small-pic-tile">
                     <article class="designer-info-tile">
@@ -99,7 +121,9 @@
                         <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
                             Marketing</span>
                     </article>
-                    <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                    <div class="designer-tile-pic-container">
+                        <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                    </div>
                 </section>
             </section>
             <div class="designers-section-title">
@@ -129,13 +153,22 @@
                                     href="www.whitepapers.com">www.whitepapers.com</a></span>
                         </p>
                     </section>
-                    <img src="img/testimonials-pic.jpg" alt="testimonials-pic">
+                    <div class="testimonials-section-pic-container">
+                        <img src="img/testimonials-pic.jpg" alt="testimonials-pic">
+                    </div>
                 </section>
                 <section class="testimonials-section-content">
-                    <blockquote class="quote second-quote">I just really want to do good work <br>and work with some
-                        great people, people who challenge me.
+                    <blockquote class="quote second-quote">I just really want<br class="reversive-responsive-br"> to do
+                        good work <br class="responsive-br">and work
+                        <br class="reversive-responsive-br"> with some great people,<br class="reversive-responsive-br">
+                        people who challenge <br class="reversive-responsive-br">me.
                     </blockquote>
-                    <img src="img/testimonials-quote-icon.png" alt="testimonials-quote-icon">
+                    <div class="quote-pic-container">
+                        <picture>
+                            <source srcset="img\tablet\testimonials-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img\testimonials-quote-icon.png" alt="testimonials-pic">
+                        </picture>
+                    </div>
                 </section>
             </section>
         </section>
@@ -145,8 +178,22 @@
             </div>
             <section class="strong-points-section-container">
                 <section class="strong-points-section-content">
-                    <img src="img/strong-points-pic-1-dawid-liberadzki.jpg" alt="strong-points-pic-1-dawid-liberadzki" class="strong-points-pic">
-                    <img src="img/strong-points-pic-2-avery-klein.jpg" alt="strong-points-pic-2-avery-klein" class="strong-points-pic">
+                    <div class="strong-points-pic-container">
+                        <picture>
+                            <source srcset="img/tablet/strong-points-pic-1-dawid-liberadzki-tablet.jpg"
+                                media="(max-width: 768px)">
+                        <img src="img/strong-points-pic-1-dawid-liberadzki.jpg"
+                            alt="strong-points-pic-1-dawid-liberadzki" class="strong-points-pic">
+                        </picture>
+                    </div>
+                    <div class="strong-points-pic-container">
+                        <picture>
+                            <source srcset="img/tablet/strong-points-pic-2-avery-klein-tablet.jpg"
+                                media="(max-width: 768px)">
+                        <img src="img/strong-points-pic-2-avery-klein.jpg" alt="strong-points-pic-2-avery-klein"
+                            class="strong-points-pic">
+                        </picture>
+                    </div>
                     <section class="strong-points-text">
                         <h2>Strengths</h2>
                         <ul class="quote strength-list">
@@ -162,24 +209,26 @@
                             <li>Nature</li>
                         </ul>
                     </section>
-                    <img src="img/strong-points-pic-3-keghan-crossland.jpg" alt="strong-points-pic-3-keghan-crossland" class="strong-points-pic">
-                    <img src="img/strong-points-pic-4-avery-klein.jpg" alt="strong-points-pic-4-avery-klein" class="strong-points-pic">
+                    <div class="strong-points-pic-container">
+                        <img src="img/strong-points-pic-3-keghan-crossland.jpg"
+                            alt="strong-points-pic-3-keghan-crossland" class="strong-points-pic">
+                    </div>
+                    <div class="strong-points-pic-container">
+                        <img src="img/strong-points-pic-4-avery-klein.jpg" alt="strong-points-pic-4-avery-klein"
+                            class="strong-points-pic">
+                    </div>
                 </section>
             </section>
         </section>
     </main>
-    <!--Footer-->
     <footer>
-        <!--Group 3152-->
         <p class="footer-contacts">
-            <a href="tel:+79211234567">+7 921 123-45-67</a>
+            <a href="tel:+79211234567">+7 921 123-45-67</a><br>
             <a href="mailto:info@modstudio.com">info@modstudio.com</a>
         </p>
-        <!--Group 3153-->
         <p class="footer-logo">
             A product of <span class="footer-logo-name">MOD</span>
         </p>
-        <!--Group 3151-->
         <p class="footer-pricing">
             <a href="Pricing">© 2023 Mod Media. All rights reserved</a>
         </p>
