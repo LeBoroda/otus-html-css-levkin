@@ -527,7 +527,6 @@ header {
         max-width: 100%;
         flex-direction: column;
         margin-bottom: 75px;
-        display: none;
     }
 
     .biography-section-header {
@@ -549,7 +548,7 @@ header {
     .biography-skills-item {
         list-style: none;
         position: relative;
-        padding-left: 15px;
+        padding-left: 3%;
         line-height: 1;
     }
 
@@ -565,7 +564,7 @@ header {
     }
 
     .biography-section-content {
-        width: 100%;
+        width: 97%;
         order: 1;
         padding-left: 3%;
     }
@@ -665,6 +664,7 @@ header {
     }
     .testimonials-section-header-text {
         transform: none;
+        font-size: 21px;
     }
     .testimonials-section-links-section {
         order: 2;
@@ -683,6 +683,12 @@ header {
         order: 1;
         display: flex;
         flex-direction: row;
+        
     }
-    
+    .second-quote {
+        font-weight: 300;
+        font-size: 30px;
+        align-self: flex-start;
+        margin: 5% 2% 0 2%;
+    }
 }
