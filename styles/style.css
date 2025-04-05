@@ -467,6 +467,30 @@ header {
     }
 }
 
+footer {
+    height: 168px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:25px;
+    padding: 1% 3%;
+}
+
+footer>p>a {
+    color: #ffffff;
+}
+
+.footer-contacts {
+    text-transform: uppercase;
+}
+.footer-pricing>a {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
     header>h1 {
         font-size: 0;
