@@ -1,4 +1,4 @@
-/* Fonts */
+
 @font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto-Bold.ttf") format("ttf");
@@ -29,7 +29,6 @@
     font-weight: 400;
 }
 
-/* Base Styles */
 body {
     font-family: "Roboto", "Playfair Display", "Bitter", sans-serif;
     font-size: 18px;
@@ -38,7 +37,6 @@ body {
     flex-direction: column;
 }
 
-/* Header Block */
 .header {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -86,7 +84,6 @@ body {
     padding: 1px 0;
 }
 
-/* Hero Block */
 .hero {
     min-height: 630px;
     display: flex;
@@ -99,6 +96,9 @@ body {
 }
 
 .hero__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 1;
     background-color: #ffffff;
     flex-direction: column;
@@ -106,14 +106,10 @@ body {
     height: 360px;
 }
 
-.title {
+.hero__image {
     position: absolute;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.hero__image.title {
     z-index: 0;
     max-height: 630px;
     max-width: 700px;
@@ -137,7 +133,6 @@ body {
     margin-bottom: 60px;
 }
 
-/* Biography Block */
 .biography {
     display: flex;
     max-width: 1165px;
@@ -211,7 +206,7 @@ body {
     margin: 0;
 }
 
-.reversive-responsive-br {
+.biography__br--mobile {
     display: none;
 }
 
@@ -232,7 +227,6 @@ body {
     margin: 0;
 }
 
-/* Designers Block */
 .designers {
     display: flex;
     flex-direction: column;
@@ -273,12 +267,14 @@ body {
 }
 
 .designers__tile--big {
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
 }
 
 .designers__info {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     order: 1;
     width: 332px;
 }
@@ -288,11 +284,23 @@ body {
 }
 
 .designers__name {
+    font-weight: 700;
+    font-size: 16px;
     text-transform: uppercase;
     margin: 0;
 }
+.designers_description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.172;
+}
 
-/* Testimonials Block */
+.designers__label {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+
 .testimonials {
     display: grid;
     max-width: 1400px;
@@ -348,13 +356,30 @@ body {
     grid-template-columns: 1fr 1fr;
 }
 
-.link-tile {
+
+.testimonials__link {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     transform: rotate(-90deg);
     grid-column: 2/3;
     margin: 20px;
 }
 
-.link-tile .tile-text a {
+
+.testimonials__link-title {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.testimonials__link-url {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.172;
+}
+
+.testimonials__link-url a {
     text-decoration: none;
     color: #000000;
 }
@@ -369,12 +394,15 @@ body {
     text-align: center;
 }
 
+.testimonials__br--mobile {
+    display: none;
+}
+
 .testimonials__quote-pic {
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-/* Strong points Block */
 .strong-points {
     display: flex;
     flex-direction: column;
@@ -464,7 +492,6 @@ body {
     }
 }
 
-/* Footer BLock */
 .footer {
     font-family: "Roboto", serif;
     font-optical-sizing: auto;
@@ -514,27 +541,6 @@ body {
 
 .footer__pricing>a {
     text-decoration: none;
-}
-
-
-
-.tile-text {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.172;
-}
-
-.tile-header {
-    font-family: "Roboto", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-weight: 700;
-    font-size: 16px;
 }
 
 @media screen and (min-width: 451px) and (max-width: 768px) {
@@ -603,18 +609,18 @@ body {
         max-height: 690px;
     }
 
-    .hero__image.title {
+    .hero__image {
         left: 18px;
     }
 
-    .hero__content.title {
+    .hero__content {
         width: 100%;
         height: 303px;
         top: 70px;
     }
 
     .biography {
-        max-width: 100%;
+        width: 100%;
         flex-direction: column;
         margin-bottom: 55px;
     }
@@ -660,7 +666,7 @@ body {
     .biography__content {
         width: 97%;
         order: 1;
-        padding-left: 35px;
+        padding-left: 20px;
     }
 
     .biography__image {
@@ -678,7 +684,7 @@ body {
         order: 6;
         max-width: 100%;
         font-size: 64px;
-        padding-left: 3%;
+        padding-left: 4%;
         margin-top: 130px;
     }
 
@@ -692,12 +698,12 @@ body {
         font-size: 30px;
     }
 
-    .responsive-br {
-        display: none;
+    .biography__br--mobile {
+        display: block;
     }
 
-    .reversive-responsive-br {
-        display: block;
+    .biography__br--desktop {
+        display: none;
     }
 
     .biography__content>h2::before {
@@ -751,6 +757,7 @@ body {
     }
 
     .testimonials__frame {
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -779,7 +786,7 @@ body {
         padding-top: 10px;
     }
 
-    .link-tile {
+    .testimonials__link {
         transform: none;
     }
 
@@ -794,6 +801,14 @@ body {
         font-size: 30px;
         align-self: flex-start;
         margin: 5% 5% 0 1.39%;
+    }
+
+    .testimonials__br--mobile {
+        display: block;
+    }
+
+    .testimonials__br--desktop {
+        display: none;
     }
 
     .strong-points {
@@ -942,12 +957,12 @@ body {
         font-size: 18px;
     }
 
-    .hero__image.title {
+    .hero__image {
         left: -10px;
         max-width: 100%;
     }
 
-    .hero__content.title {
+    .hero__content {
         width: 100%;
         height: 303px;
         top: 70px;
@@ -1000,7 +1015,7 @@ body {
     .biography__content {
         width: 97%;
         order: 1;
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     .biography__image {
@@ -1033,12 +1048,12 @@ body {
         font-size: 30px;
     }
 
-    .responsive-br {
-        display: none;
+    .biography__br--mobile {
+        display: block;
     }
 
-    .reversive-responsive-br {
-        display: block;
+    .biography__br--desktop {
+        display: none;
     }
 
     .biography__content>h2::before {
@@ -1122,7 +1137,7 @@ body {
         padding-top: 10px;
     }
 
-    .link-tile {
+    .testimonials__link {
         display: flex;
         flex-direction: column;
         transform: none;
@@ -1130,7 +1145,7 @@ body {
         font-size: 16px;
     }
 
-    .link-tile>p {
+    .testimonials__link>p {
         margin: 0 0 0 10px;
         padding: 0;
     }
@@ -1147,6 +1162,14 @@ body {
         font-size: 30px;
         align-self: flex-start;
         margin: 5% 5% 0 1.39%;
+    }
+
+    .testimonials__br--mobile {
+        display: block;
+    }
+
+    .testimonials__br--desktop {
+        display: none;
     }
 
     .strong-points {
