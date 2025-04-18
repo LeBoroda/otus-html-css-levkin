@@ -244,6 +244,36 @@
             <a href="Pricing">© 2023 Mod Media. All rights reserved</a>
         </p>
     </footer>
+
+    <dialog class="modal-wrap open" id="contactDialog">
+        <div class="modal">
+          <div class="modal__title">
+            <p>Get in touch</p>
+          </div>
+          <div class="modal__description">
+            <p>Do you have any questions? Have something to say? Don't be shy, write to us:</p>
+          </div>
+          <div class="modal__input_name input">
+            <p class="input__title">Name</p>
+            <input type="text" class="input__name" placeholder="3+ Characters">
+          </div>
+          <div class="modal__input_email input">
+            <p class="input__title">E-mail</p>
+            <input type="email" class="input__email" placeholder="name@email.com">
+          </div>
+          <div class="modal__input_comment input">
+            <p class="input__title">Comment</p>
+            <textarea name="input_comment" id="comment" rows="10" placeholder="Some text..."></textarea>
+          </div>
+          <div class="modal_buttons">
+            <button class="cancel" id="cancelBtn">Cancel</button>
+            <button class="submit">+ Send</button>
+          </div>
+        </div>
+      </dialog>
+  
+  <script src="main.js" defer></script>
+  
 </body>
 
 </html>

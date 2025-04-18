@@ -1,4 +1,3 @@
-
 @mixin font-settings($ff1, $ff2, $fos, $fs, $fvs1, $fvs2) {
     font-family: $ff1, $ff2;
     font-optical-sizing: $fos;
@@ -25,6 +24,7 @@
 @import 'testimonials';
 @import 'strong-points';
 @import 'footer';
+@import 'modal';
 
 $mobile-screen: 450px;
 $tablet-screen: 768px;
