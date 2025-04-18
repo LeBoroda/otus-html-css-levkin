@@ -1,0 +1,38 @@
+
+@mixin font-settings($ff1, $ff2, $fos, $fs, $fvs1, $fvs2) {
+    font-family: $ff1, $ff2;
+    font-optical-sizing: $fos;
+    font-style: $fs;
+    font-variation-settings: $fvs1 $fvs2;
+}
+
+@mixin font-dimensions($fw, $fs) {
+    font-weight: $fw;
+    font-size: $fs;
+}
+
+@mixin flex-settings($disp, $dir) {
+    display: $disp;
+    flex-direction: $dir;
+}
+
+@import 'fonts';
+@import 'body';
+@import 'header';
+@import 'hero';
+@import 'biography';
+@import 'designers';
+@import 'testimonials';
+@import 'strong-points';
+@import 'footer';
+
+$mobile-screen: 450px;
+$tablet-screen: 768px;
+
+@media screen and (min-width: $mobile-screen) and (max-width: $tablet-screen) {
+    @import 'tablet';
+}
+
+@media screen and (max-width: $mobile-screen) {
+    @import 'mobile';
+}
