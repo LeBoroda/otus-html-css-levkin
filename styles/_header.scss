@@ -7,35 +7,35 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: -17px;
-}
 
-.header__text {
-    font-family: "Playfair Display", serif;
-    @include font-dimensions(600, 86px);
-    margin-left: 3px;
-}
+    &__text {
+        font-family: "Playfair Display", serif;
+        @include font-dimensions(600, 86px);
+        margin-left: 3px;
+    }
 
-.header__nav {
-    flex-grow: 2;
-}
+    &__nav {
+        flex-grow: 2;
+    }
 
-.header__menu {
-    @include font-dimensions(700, 24px);
-    line-height: 1.172;
-    display: flex;
-    gap: 48px;
-    list-style-type: none;
-    justify-content: end;
-    margin: 15px;
-}
+    &__menu {
+        @include font-dimensions(700, 24px);
+        line-height: 1.172;
+        display: flex;
+        gap: 48px;
+        list-style-type: none;
+        justify-content: end;
+        margin: 15px;
+    }
 
-.header__menu-item>a {
-    text-decoration: none;
-    color: #000000;
-}
+    &__menu-item>a {
+        text-decoration: none;
+        color: #000000;
+    }
 
-.header__message-icon {
-    background-color: white;
-    border: 0px;
-    padding: 1px 0;
+    &__message-icon {
+        background-color: white;
+        border: 0px;
+        padding: 1px 0;
+    }
 }

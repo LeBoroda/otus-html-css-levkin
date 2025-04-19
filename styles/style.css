@@ -44,18 +44,15 @@ body {
   align-items: center;
   margin-bottom: -17px;
 }
-
 .header__text {
   font-family: "Playfair Display", serif;
   font-weight: 600;
   font-size: 86px;
   margin-left: 3px;
 }
-
 .header__nav {
   flex-grow: 2;
 }
-
 .header__menu {
   font-weight: 700;
   font-size: 24px;
@@ -66,12 +63,10 @@ body {
   justify-content: end;
   margin: 15px;
 }
-
 .header__menu-item > a {
   text-decoration: none;
   color: #000000;
 }
-
 .header__message-icon {
   background-color: white;
   border: 0px;
@@ -135,7 +130,6 @@ body {
   box-sizing: border-box;
   margin-bottom: 125px;
 }
-
 .biography__description {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
@@ -145,23 +139,19 @@ body {
   font-size: 18px;
   line-height: 1.172;
 }
-
 .biography__image {
   width: 49%;
   order: 0;
 }
-
 .biography__image > img {
   width: 100%;
 }
-
 .biography__content {
   width: 39%;
   order: 2;
   display: flex;
   flex-direction: column;
 }
-
 .biography__content > h2 {
   font-family: "Playfair Display", serif;
   font-weight: 500;
@@ -169,11 +159,9 @@ body {
   max-width: 230px;
   margin: 180px 0 55px;
 }
-
 .biography__position {
   margin: 0;
 }
-
 .biography__skills {
   margin: 0;
   padding: 0;
@@ -182,34 +170,28 @@ body {
   gap: 10px;
   list-style-type: none;
 }
-
 .biography__skill-item:nth-child(-n+3)::after {
   content: " /";
 }
-
 .biography__rectangle {
   margin: 30px 0 20px;
   width: 20px;
   height: 6px;
   background-color: black;
 }
-
 .biography__quote {
   font-family: "Bitter", serif;
   font-weight: 400;
   font-size: 26px;
   margin: 0;
 }
-
 .biography__br_mobile {
   display: none;
 }
-
 .biography__header {
   order: 1;
   flex-grow: 1;
 }
-
 .biography__text {
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
