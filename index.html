@@ -62,11 +62,9 @@
                     </ul>
                 </div>
                 <div class="biography__rectangle"></div>
-                <blockquote class="biography__quote">“The more I deal with<br
-                        class="biography__br_mobile"> the work
+                <blockquote class="biography__quote">“The more I deal with<br class="biography__br_mobile"> the work
                     <br class="biography__br_desktop"> as something that is my own,
-                    <br class="biography__br_mobile"> as something that<br
-                        class="biography__br_mobile"> is
+                    <br class="biography__br_mobile"> as something that<br class="biography__br_mobile"> is
                     personal, the more successful it is.”
                 </blockquote>
             </section>
@@ -78,7 +76,8 @@
                         <p class="designers__name">Jess Wonder</p>
                         <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design
+                            Strategy /
                             Marketing</span>
                     </article>
                     <div class="designers__pic">
@@ -94,7 +93,8 @@
                         <p class="designers__name">Kameron Clein</p>
                         <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design
+                            Strategy /
                             Marketing</span>
                     </article>
                     <div class="designers__pic">
@@ -109,7 +109,8 @@
                         <p class="designers__name">LOUISSE RED</p>
                         <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design
+                            Strategy /
                             Marketing</span>
                     </article>
                     <div class="designers__pic">
@@ -124,7 +125,8 @@
                         <p class="designers__name">Kameron Clein</p>
                         <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design
+                            Strategy /
                             Marketing</span>
                     </article>
                     <div class="designers__pic">
@@ -167,11 +169,9 @@
                     </div>
                 </section>
                 <section class="testimonials__content">
-                    <blockquote class="testimonials__quote">I just really want<br
-                            class="testimonials__br_mobile"> to do
+                    <blockquote class="testimonials__quote">I just really want<br class="testimonials__br_mobile"> to do
                         good work <br class="testimonials__br_desktop">and work
-                        <br class="testimonials__br_mobile"> with some great people,<br
-                            class="testimonials__br_mobile">
+                        <br class="testimonials__br_mobile"> with some great people,<br class="testimonials__br_mobile">
                         people who challenge <br class="testimonials__br_mobile">me.
                     </blockquote>
                     <div class="testimonials__quote-pic">
@@ -247,33 +247,39 @@
 
     <dialog class="modal-wrap open" id="contactDialog">
         <div class="modal">
-          <div class="modal__title">
-            <p>Get in touch</p>
-          </div>
-          <div class="modal__description">
-            <p>Do you have any questions? Have something to say? Don't be shy, write to us:</p>
-          </div>
-          <div class="modal__input_name input">
-            <p class="input__title">Name</p>
-            <input type="text" class="input__name" placeholder="3+ Characters">
-          </div>
-          <div class="modal__input_email input">
-            <p class="input__title">E-mail</p>
-            <input type="email" class="input__email" placeholder="name@email.com">
-          </div>
-          <div class="modal__input_comment input">
-            <p class="input__title">Comment</p>
-            <textarea name="input_comment" id="comment" rows="10" placeholder="Some text..."></textarea>
-          </div>
-          <div class="modal_buttons">
-            <button class="cancel" id="cancelBtn">Cancel</button>
-            <button class="submit">+ Send</button>
-          </div>
+            <p class="modal__title">Get in touch</p>
+            <p class="modal__description">
+                Do you have any questions? Have something to say? Don't be shy, write to us:
+            </p>
+            <div class="modal__feedback">
+                <form class="feedback-form" method="post">
+                    <label class="feedback-form__label">
+                        <div>Name</div>
+                        <input type="text" name="name" placeholder="3+ Characters" required>
+                    </label>
+
+                    <label class="feedback-form__label">
+                        <div>E-mail</div>
+                        <input type="email" name="email" placeholder="name@email.com" required>
+                    </label>
+
+                    <label class="feedback-form__label">
+                        <div>Comment</div>
+                        <textarea name="comment" placeholder="Some text..." required></textarea>
+                    </label>
+
+                    <div class="modal-buttons">
+                        <button type="button" id="cancelBtn" class="btn cancel">Cancel</button>
+                        <button type="submit" class="btn submit">+ Send</button>
+                    </div>
+                </form>
+            </div>
         </div>
-      </dialog>
-  
-  <script src="main.js" defer></script>
-  
+    </dialog>
+
+
+    <script src="main.js" defer></script>
+
 </body>
 
 </html>
