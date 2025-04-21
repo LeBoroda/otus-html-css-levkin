@@ -79,10 +79,9 @@
     margin: 0;
     grid-column: 2/3;
     text-align: center;
-}
-
-.testimonials__br_mobile {
-    display: none;
+    &_mobile {
+        display: none;
+    }
 }
 
 .testimonials__quote-pic {
