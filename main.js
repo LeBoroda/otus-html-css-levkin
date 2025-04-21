@@ -1,6 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   const dialog = document.getElementById("contactDialog");
   const cancelBtn = document.getElementById("cancelBtn");
+  const openBtn = document.querySelector(".header__message-icon");
+
+  openBtn.addEventListener("click", () => {
+    dialog.showModal();
+    document.body.style.overflow = "hidden"; // Блокируем прокрутку
+  });
 
   if (dialog.classList.contains("open")) {
     dialog.showModal();
