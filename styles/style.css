@@ -280,7 +280,7 @@ body {
 
 .testimonials {
   display: grid;
-  max-width: 100vw;
+  max-width: 1400px;
   box-sizing: border-box;
   grid-template-columns: 119px 1fr;
   margin: auto;
@@ -897,6 +897,9 @@ body {
     padding: 10%;
     gap: 5px;
   }
+  .modal {
+    width: 440px;
+  }
   .footer {
     width: 100%;
     height: 193px;
@@ -1196,6 +1199,9 @@ body {
     align-items: flex-start;
     padding: 10%;
     gap: 5px;
+  }
+  .modal {
+    width: 315px;
   }
   .footer {
     width: 100%;
