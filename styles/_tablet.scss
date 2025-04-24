@@ -16,25 +16,34 @@ body {
     @include flex-settings(flex, row);
     justify-content: space-between;
     height: 82px;
-}
 
-.header__menu-item {
-    font-size: 0;
-}
+    &__menu-item {
+        font-size: 0;
+    }
 
-.header__menu-item::first-letter {
-    @include font-dimensions(400, 40px);
-    font-family: "Bitter", serif;
-}
+    &__menu-item>a{
+        position: inherit;
+    }
 
-.header__menu {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
+    &__menu-item::first-letter {
+        @include font-dimensions(400, 40px);
+        font-family: "Bitter", serif;
+    }
 
-.header__message {
-    margin: 0 10px 0 120px;
+    &__menu-item > a:hover {
+        transition: color 0.5s ease;
+        color: #A07C72;
+    }
+
+    &__menu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__message {
+        margin: 0 10px 0 120px;
+    }
 }
 
 .hero {
