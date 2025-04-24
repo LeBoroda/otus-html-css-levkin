@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   messageIcon.addEventListener('mouseleave', () => {
-    iconImage.src = 'otus-html-css-levkin/img/icons/default.png';
+    iconImage.src = '/otus-html-css-levkin/img/icons/default.png';
   });
 
 
   messageIcon.addEventListener('mousedown', () => {
-    iconImage.src = 'otus-html-css-levkin/img/icons/active.png';
+    iconImage.src = '/otus-html-css-levkin/img/icons/active.png';
   });
 
   messageIcon.addEventListener('mouseup', () => {
-    iconImage.src = 'otus-html-css-levkin/img/icons/default.png';
+    iconImage.src = '/otus-html-css-levkin/img/icons/default.png';
   });
 });
