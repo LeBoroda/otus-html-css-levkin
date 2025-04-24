@@ -111,3 +111,13 @@
     transform: translateY(-220%);
   }
 }
+
+textarea:invalid:focus,
+input:invalid:focus,
+input:invalid:out-of-range {
+  outline: 2px solid red;
+}
+
+input:placeholder-shown{
+  outline: 2px solid grey;
+}
