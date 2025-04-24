@@ -71,6 +71,7 @@ body {
   background-color: white;
   border: 0px;
   padding: 1px 0;
+  outline: none;
 }
 
 .hero {
