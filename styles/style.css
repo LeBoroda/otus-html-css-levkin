@@ -636,14 +636,6 @@ input:invalid:out-of-range {
   outline: 2px solid red;
 }
 
-input:-moz-placeholder-shown {
-  outline: 2px solid grey;
-}
-
-input:placeholder-shown {
-  outline: 2px solid grey;
-}
-
 @media screen and (min-width: 450px) and (max-width: 768px) {
   html,
   body {
