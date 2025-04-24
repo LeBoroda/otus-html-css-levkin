@@ -24,19 +24,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   messageIcon.addEventListener('mouseenter', () => {
-    iconImage.src = 'img/icons/hover.png';
+    iconImage.src = 'otus-html-css-levkin/img/icons/hover.png';
   });
 
   messageIcon.addEventListener('mouseleave', () => {
-    iconImage.src = 'img/icons/default.png';
+    iconImage.src = 'otus-html-css-levkin/img/icons/default.png';
   });
 
 
   messageIcon.addEventListener('mousedown', () => {
-    iconImage.src = 'img/icons/active.png';
+    iconImage.src = 'otus-html-css-levkin/img/icons/active.png';
   });
 
   messageIcon.addEventListener('mouseup', () => {
-    iconImage.src = 'img/icons/default.png';
+    iconImage.src = 'otus-html-css-levkin/img/icons/default.png';
   });
 });
