@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   messageIcon.addEventListener('mouseenter', () => {
-    iconImage.src = 'otus-html-css-levkin/img/icons/hover.png';
+    iconImage.src = './otus-html-css-levkin/img/icons/hover.png';
   });
 
   messageIcon.addEventListener('mouseleave', () => {
