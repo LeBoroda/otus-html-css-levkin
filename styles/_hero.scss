@@ -1,5 +1,5 @@
 .hero {
-    min-height: 630px;
+    height: 630px;
     @include flex-settings(flex, column);
     align-items: center;
     justify-content: center;
@@ -23,11 +23,10 @@
     display: flex;
     justify-content: center;
     z-index: 0;
-    max-height: 630px;
-    max-width: 700px;
-    object-fit: cover;
 }
-
+.hero__image img {
+    width:100%;
+  }
 .hero__header {
     font-family: "Playfair Display", serif;
     @include font-dimensions(500, 86px);

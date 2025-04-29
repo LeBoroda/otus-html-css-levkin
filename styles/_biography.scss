@@ -61,10 +61,9 @@
         font-family: "Bitter", serif;
         @include font-dimensions(400, 26px);
         margin: 0;
-    }
-
-    &__br_mobile {
-        display: none;
+        &_mobile {
+            display: none;
+        }
     }
 
     &__header {

@@ -74,7 +74,7 @@ body {
 }
 
 .hero {
-  min-height: 630px;
+  height: 630px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,10 +100,10 @@ body {
   display: flex;
   justify-content: center;
   z-index: 0;
-  max-height: 630px;
-  max-width: 700px;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.hero__image img {
+  width: 100%;
 }
 
 .hero__header {
@@ -185,7 +185,7 @@ body {
   font-size: 26px;
   margin: 0;
 }
-.biography__br_mobile {
+.biography__quote_mobile {
   display: none;
 }
 .biography__header {
@@ -280,7 +280,7 @@ body {
 
 .testimonials {
   display: grid;
-  max-width: 1400px;
+  max-width: 100vw;
   box-sizing: border-box;
   grid-template-columns: 119px 1fr;
   margin: auto;
@@ -368,8 +368,7 @@ body {
   grid-column: 2/3;
   text-align: center;
 }
-
-.testimonials__br_mobile {
+.testimonials__quote_mobile {
   display: none;
 }
 
@@ -470,7 +469,7 @@ body {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   height: 168px;
-  max-width: 1440px;
+  max-width: 100vw;
   display: flex;
   flex-direction: row;
   background-color: black;
@@ -535,8 +534,8 @@ body {
 .modal {
   display: flex;
   flex-direction: column;
-  width: 500px;
-  max-height: 605px;
+  width: 475px;
+  height: 589px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -559,7 +558,11 @@ body {
   flex-direction: column;
   font-weight: 500;
   font-size: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 33px;
+}
+
+.feedback-form__label-title {
+  margin-bottom: 7px;
 }
 
 .feedback-form input,
@@ -569,7 +572,7 @@ body {
   font-family: inherit;
   margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 7px;
 }
 
 .feedback-form textarea {
@@ -580,24 +583,49 @@ body {
 .modal-buttons {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 .modal-buttons .btn {
-  width: 200px;
-  height: 50px;
+  width: 230px;
+  height: 60px;
   font-size: 16px;
-  border: none;
-  border-radius: 6px;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  cursor: pointer;
 }
 
 .cancel {
-  background-color: #ccc;
+  background-color: #fff;
 }
 
 .submit {
   background-color: #000000;
   color: white;
+}
+
+.input-with-icon {
+  position: relative;
+  width: 100%;
+}
+
+.input-with-icon i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-40%);
+  color: #aaa;
+  pointer-events: none;
+}
+
+.input-with-icon input,
+.input-with-icon textarea {
+  padding-right: 35px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input-with-icon .fa-message {
+  transform: translateY(-220%);
 }
 
 @media screen and (min-width: 450px) and (max-width: 768px) {
@@ -728,10 +756,10 @@ body {
     font-weight: 300;
     font-size: 30px;
   }
-  .biography__br_mobile {
+  .biography__quote_mobile {
     display: block;
   }
-  .biography__br_desktop {
+  .biography__quote_desktop {
     display: none;
   }
   .biography__content > h2::before {
@@ -814,10 +842,10 @@ body {
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
   }
-  .testimonials__br_mobile {
+  .testimonials__quote_mobile {
     display: block;
   }
-  .testimonials__br_desktop {
+  .testimonials__quote_desktop {
     display: none;
   }
   .strong-points {
@@ -1019,10 +1047,10 @@ body {
     font-weight: 300;
     font-size: 30px;
   }
-  .biography__br_mobile {
+  .biography__quote_mobile {
     display: block;
   }
-  .biography__br_desktop {
+  .biography__quote_desktop {
     display: none;
   }
   .biography__content > h2::before {
@@ -1115,10 +1143,10 @@ body {
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
   }
-  .testimonials__br_mobile {
+  .testimonials__quote_mobile {
     display: block;
   }
-  .testimonials__br_desktop {
+  .testimonials__quote_desktop {
     display: none;
   }
   .strong-points {

@@ -142,14 +142,12 @@ body {
 
 .biography__quote {
     @include font-dimensions(300, 30px);
-}
-
-.biography__br_mobile {
-    display: block;
-}
-
-.biography__br_desktop {
-    display: none;
+    &_mobile {
+        display: block;
+    }
+    &_desktop {
+        display: none;
+    }
 }
 
 .biography__content>h2::before {
@@ -250,14 +248,12 @@ body {
     @include font-dimensions(300, 30px);
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
-}
-
-.testimonials__br_mobile {
-    display: block;
-}
-
-.testimonials__br_desktop {
-    display: none;
+    &_mobile {
+        display: block;
+    }
+    &_desktop {
+        display: none;
+    }
 }
 
 .strong-points {
