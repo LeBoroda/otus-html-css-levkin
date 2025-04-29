@@ -533,6 +533,36 @@ body {
   text-decoration: none;
 }
 
+.modal-wrap {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+  z-index: 999;
+  box-sizing: border-box;
+}
+
+.modal-wrap::backdrop {
+  background-color: rgba(129, 126, 126, 0.6);
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-height: 605px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid transparent;
+}
+
 @media screen and (min-width: 450px) and (max-width: 768px) {
   html,
   body {
