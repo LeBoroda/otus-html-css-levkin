@@ -71,6 +71,8 @@ body {
   background-color: white;
   border: 0px;
   padding: 1px 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .hero {
@@ -280,7 +282,7 @@ body {
 
 .testimonials {
   display: grid;
-  max-width: 100vw;
+  max-width: 1400px;
   box-sizing: border-box;
   grid-template-columns: 119px 1fr;
   margin: auto;
@@ -628,6 +630,20 @@ body {
   transform: translateY(-220%);
 }
 
+textarea:invalid:focus,
+input:invalid:focus,
+input:invalid:out-of-range {
+  outline: 2px solid red;
+}
+
+input:-moz-placeholder-shown {
+  outline: 2px solid grey;
+}
+
+input:placeholder-shown {
+  outline: 2px solid grey;
+}
+
 @media screen and (min-width: 450px) and (max-width: 768px) {
   html,
   body {
@@ -896,6 +912,9 @@ body {
     align-items: flex-start;
     padding: 10%;
     gap: 5px;
+  }
+  .modal {
+    width: 440px;
   }
   .footer {
     width: 100%;
@@ -1196,6 +1215,9 @@ body {
     align-items: flex-start;
     padding: 10%;
     gap: 5px;
+  }
+  .modal {
+    width: 315px;
   }
   .footer {
     width: 100%;

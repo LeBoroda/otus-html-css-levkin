@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   openBtn.addEventListener("click", () => {
     dialog.showModal();
-    document.body.style.overflow = "hidden"; // Блокируем прокрутку
+    document.body.style.overflow = "hidden";
   });
 
   if (dialog.classList.contains("open")) {

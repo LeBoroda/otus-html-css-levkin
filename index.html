@@ -258,10 +258,10 @@
             </p>
             <div class="modal__feedback">
                 <form class="feedback-form" method="">
-                    <label class="feedback-form__label">
+                    <label class="feedback-form__label" tabindex="0">
                         <div class="feedback-form__label-title">Name</div>
                         <div class="input-with-icon">
-                            <input type="text" name="name" placeholder="3+ Characters" required>
+                            <input type="text" name="name" placeholder="3+ Characters" minlength="3" required>
                             <i class="fa-solid fa-user-pen"></i>
                         </div>
                     </label>
@@ -291,8 +291,6 @@
         </div>
     </dialog>
 
-    <script src="main.js" defer></script>
+    <script src="/otus-html-css-levkin/main.js" defer></script>
 
 </body>
-
-</html>
