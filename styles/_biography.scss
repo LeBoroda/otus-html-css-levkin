@@ -1,0 +1,82 @@
+.biography {
+    display: flex;
+    max-width: 1165px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 125px;
+}
+
+.biography__description {
+    @include font-settings("Roboto", serif, auto, normal,  "wdth", 100);
+    @include font-dimensions(500, 18px);
+    line-height: 1.172;
+}
+
+.biography__image {
+    width: 49%;
+    order: 0;
+}
+
+.biography__image>img {
+    width: 100%;
+}
+
+.biography__content {
+    width: 39%;
+    order: 2;
+    @include flex-settings(flex, column);
+}
+
+.biography__content>h2 {
+    font-family: "Playfair Display", serif;
+    @include font-dimensions(500, 86px);
+    max-width: 230px;
+    margin: 180px 0 55px;
+}
+
+.biography__position {
+    margin: 0;
+}
+
+.biography__skills {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style-type: none;
+}
+
+.biography__skill-item:nth-child(-n+3)::after {
+    content: " /";
+}
+
+.biography__rectangle {
+    margin: 30px 0 20px;
+    width: 20px;
+    height: 6px;
+    background-color: black;
+}
+
+.biography__quote {
+    font-family: "Bitter", serif;
+    @include font-dimensions(400, 26px);
+    margin: 0;
+}
+
+.biography__br_mobile {
+    display: none;
+}
+
+.biography__header {
+    order: 1;
+    flex-grow: 1;
+}
+
+.biography__text {
+    @include font-settings("Roboto", serif, auto, normal,  "wdth", 100);
+    @include font-dimensions(700, 24px);
+    line-height: 1.172;
+    transform: rotate(-90deg) translateX(-17%) translateY(-79%);
+    margin: 0;
+}

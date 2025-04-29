@@ -14,193 +14,200 @@
 </head>
 
 <body>
-    <header>
-        <h1>Mod</h1>
-        <nav class="header-nav">
-            <ul class="header-menu">
-                <li class="header-menu-item"><a href="#biography">Biography</a></li>
-                <li class="header-menu-item"><a href="#designers">Designers</a></li>
-                <li class="header-menu-item"><a href="#testimonials">Testimonials</a></li>
-                <li class="header-menu-item"><a href="#strong-points">Strong points</a></li>
+    <header class="header">
+        <h1 class="header__text">Mod</h1>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#biography">Biography</a></li>
+                <li class="header__menu-item"><a href="#designers">Designers</a></li>
+                <li class="header__menu-item"><a href="#testimonials">Testimonials</a></li>
+                <li class="header__menu-item"><a href="#strong-points">Strong points</a></li>
             </ul>
         </nav>
-        <div class="header-message-icon-container">
-            <button class="message-icon"><img src="img/icons/default.png" alt="default-icon"></button>
+        <div class="header__message">
+            <button class="header__message-icon"><img src="img/icons/default.png" alt="default-icon"></button>
         </div>
     </header>
     <main>
-        <section class="hero-section">
-            <div class="hero-section-content hero">
-                <h2 class="hero-section-header">Mod Studio</h2>
-                <p class="hero-section-text">Modern Web Studio</p>
+        <section class="hero">
+            <div class="hero__content">
+                <h2 class="hero__header">Mod Studio</h2>
+                <p class="hero__text">Modern Web Studio</p>
             </div>
-            <div class="hero-section-image hero">
+            <div class="hero__image">
                 <picture>
                     <source srcset="img/mobile/hero-section-pic-mobile.png" media="(max-width: 450px)">
                     <source srcset="img/tablet/hero-section-pic-tablet.png" media="(max-width: 768px)">
-                    <img src="img/hero-section-pic.jpg" alt="hero-section-pic">
+                    <img src="img/hero-section-pic.jpg" alt="hero__pic">
                 </picture>
             </div>
         </section>
-        <section class="biography-section" id="biography">
-            <div class="biography-section-header">
-                <h3 class="biography-header-text">Biography</h3>
+        <section class="biography" id="biography">
+            <div class="biography__header">
+                <h3 class="biography__text">Biography</h3>
             </div>
-            <picture class="biography-section-image">
+            <picture class="biography__image">
                 <source srcset="img/mobile/biography-pic-mobile.jpg" media="(max-width: 450px)">
                 <img src="img/biography-pic.jpg" alt="biography-pic">
             </picture>
-            <section class="biography-section-content">
+            <section class="biography__content">
                 <h2>Katya Mills</h2>
-                <div class="biography-position-skills">
-                    <p class="biography-position">Art Director</p>
-                    <ul class="biography-skills">
-                        <li class="biography-skills-item">Scenography</li>
-                        <li class="biography-skills-item">Styling</li>
-                        <li class="biography-skills-item">Creative Photography</li>
-                        <li class="biography-skills-item">Design</li>
+                <div class="biography__description">
+                    <p class="biography__position">Art Director</p>
+                    <ul class="biography__skills">
+                        <li class="biography__skill-item">Scenography</li>
+                        <li class="biography__skill-item">Styling</li>
+                        <li class="biography__skill-item">Creative Photography</li>
+                        <li class="biography__skill-item">Design</li>
                     </ul>
                 </div>
-                <div class="black_rectangle"></div>
-                <blockquote class="quote first-quote">“The more I deal with<br class="reversive-responsive-br"> the work
-                    <br class="responsive-br"> as something that is my own,
-                    <br class="reversive-responsive-br"> as something that<br class="reversive-responsive-br"> is
+                <div class="biography__rectangle"></div>
+                <blockquote class="biography__quote">“The more I deal with<br
+                        class="biography__br_mobile"> the work
+                    <br class="biography__br_desktop"> as something that is my own,
+                    <br class="biography__br_mobile"> as something that<br
+                        class="biography__br_mobile"> is
                     personal, the more successful it is.”
                 </blockquote>
             </section>
         </section>
-        <section class="designers-section" id="designers">
-            <section class="designers-tiles-section">
-                <section class="designer-tile big-pic-tile">
-                    <article class="designer-info-tile">
-                        <p class="tile-info-header designer-name">Jess Wonder</p>
-                        <span class="tile-info-header">From/</span><span class="tile-info-text"> Be more
+        <section class="designers" id="designers">
+            <section class="designers__tiles">
+                <section class="designers__tile designers__tile_big">
+                    <article class="designers__info">
+                        <p class="designers__name">Jess Wonder</p>
+                        <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
                             Marketing</span>
                     </article>
-                    <div class="designer-tile-pic-container">
+                    <div class="designers__pic">
                         <picture>
                             <source srcset="img/tablet/jess-wonder-pic-tablet.jpg" media="(max-width: 768px)">
-                            <img src="img/jess-wonder-pic.jpg" alt="jess-wonder" class="designer-tile-pic">
+                            <img src="img/jess-wonder-pic.jpg" alt="jess-wonder" class="designers__img">
                         </picture>
 
                     </div>
                 </section>
-                <section class="designer-tile small-pic-tile">
-                    <article class="designer-info-tile">
-                        <p class="tile-info-header designer-name">Kameron Clein</p>
-                        <span class="tile-info-header">From/</span><span class="tile-info-text"> Be more
+                <section class="designers__tile">
+                    <article class="designers__info">
+                        <p class="designers__name">Kameron Clein</p>
+                        <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
                             Marketing</span>
                     </article>
-                    <div class="designer-tile-pic-container">
+                    <div class="designers__pic">
                         <picture>
                             <source srcset="img/tablet/kameron-clein-pic-tablet.jpg" media="(max-width: 768px)">
-                            <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                            <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designers__img">
                         </picture>
                     </div>
                 </section>
-                <section class="designer-tile small-pic-tile">
-                    <article class="designer-info-tile">
-                        <p class="tile-info-header designer-name">LOUISSE RED</p>
-                        <span class="tile-info-header">From/</span><span class="tile-info-text"> Be more
+                <section class="designers__tile">
+                    <article class="designers__info">
+                        <p class="designers__name">LOUISSE RED</p>
+                        <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
                             Marketing</span>
                     </article>
-                    <div class="designer-tile-pic-container">
+                    <div class="designers__pic">
                         <picture>
-                            <source srcset="img\tablet\louisse-red-pic-tablet.jpg" media="(max-width: 768px)">
-                            <img src="img/louisse-red-pic.jpg" alt="louisse-red" class="designer-tile-pic">
+                            <source srcset="img/tablet/louisse-red-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/louisse-red-pic.jpg" alt="louisse-red" class="designers__img">
                         </picture>
                     </div>
                 </section>
-                <section class="designer-tile small-pic-tile">
-                    <article class="designer-info-tile">
-                        <p class="tile-info-header designer-name">Kameron Clein</p>
-                        <span class="tile-info-header">From/</span><span class="tile-info-text"> Be more
+                <section class="designers__tile">
+                    <article class="designers__info">
+                        <p class="designers__name">Kameron Clein</p>
+                        <span class="designers__label">From/</span><span class="designers__description"> Be more
                             flower</span><br>
-                        <span class="tile-info-header">Skills/</span><span class="tile-info-text">Design Strategy /
+                        <span class="designers__label">Skills/</span><span class="designers__description">Design Strategy /
                             Marketing</span>
                     </article>
-                    <div class="designer-tile-pic-container">
-                        <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designer-tile-pic">
+                    <div class="designers__pic">
+                        <picture>
+                            <source srcset="img/tablet/kameron-clein-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/kameron-clein-pic.jpg" alt="kameron-clein" class="designers__img">
+                        </picture>
                     </div>
                 </section>
             </section>
-            <div class="designers-section-title">
-                <h3 class="designers-section-header-text">Designers</h3>
+            <div class="designers__title">
+                <h3 class="designers__text">Designers</h3>
             </div>
         </section>
-        <section class="testimonials-section" id="testimonials">
-            <section class="testimonials-section-frame">
-                <div class="testimonials-section-header">
-                    <h3 class="testimonials-section-header-text">Testimonials</h3>
+        <section class="testimonials" id="testimonials">
+            <section class="testimonials__frame">
+                <div class="testimonials__header">
+                    <h3 class="testimonials__text">Testimonials</h3>
                 </div>
-                <section class="testimonials-section-links-section">
-                    <section class="testimonials-section-links">
-                        <div class="link-tile">
-                            <p class="tile-info-header link-name">Website</p>
-                            <p class="tile-info-text link-address"><a href="www.whitepapers.com">www.whitepapers.com</a>
+                <section class="testimonials__links-section">
+                    <section class="testimonials__links">
+                        <div class="testimonials__link">
+                            <p class="testimonials__link-title">Website</p>
+                            <p class="testimonials__link-url"><a href="www.whitepapers.com">www.whitepapers.com</a>
                             </p>
                         </div>
-                        <div class="link-tile">
-                            <p class="tile-info-header link-name">Creativity</p>
-                            <p class="tile-info-text link-address"><a href="www.whitepapers.com">www.whitepapers.com</a>
+                        <div class="testimonials__link">
+                            <p class="testimonials__link-title">Creativity</p>
+                            <p class="testimonials__link-url"><a href="www.whitepapers.com">www.whitepapers.com</a>
                             </p>
                         </div>
-                        <div class="link-tile">
-                            <p class="tile-info-header link-name">Creativity</p>
-                            <p class="tile-info-text link-address"><a href="www.whitepapers.com">www.whitepapers.com</a>
+                        <div class="testimonials__link">
+                            <p class="testimonials__link-title">Creativity</p>
+                            <p class="testimonials__link-url"><a href="www.whitepapers.com">www.whitepapers.com</a>
                             </p>
                         </div>
                     </section>
-                    <div class="testimonials-section-pic-container">
+                    <div class="testimonials__pic">
                         <img src="img/testimonials-pic.jpg" alt="testimonials-pic">
                     </div>
                 </section>
-                <section class="testimonials-section-content">
-                    <blockquote class="quote second-quote">I just really want<br class="reversive-responsive-br"> to do
-                        good work <br class="responsive-br">and work
-                        <br class="reversive-responsive-br"> with some great people,<br class="reversive-responsive-br">
-                        people who challenge <br class="reversive-responsive-br">me.
+                <section class="testimonials__content">
+                    <blockquote class="testimonials__quote">I just really want<br
+                            class="testimonials__br_mobile"> to do
+                        good work <br class="testimonials__br_desktop">and work
+                        <br class="testimonials__br_mobile"> with some great people,<br
+                            class="testimonials__br_mobile">
+                        people who challenge <br class="testimonials__br_mobile">me.
                     </blockquote>
-                    <div class="quote-pic-container">
+                    <div class="testimonials__quote-pic">
                         <picture>
-                            <source srcset="img\tablet\testimonials-pic-tablet.jpg" media="(max-width: 768px)">
-                            <img src="img\testimonials-quote-icon.png" alt="testimonials-pic">
+                            <source srcset="img/tablet/testimonials-pic-tablet.jpg" media="(max-width: 768px)">
+                            <img src="img/testimonials-quote-icon.png" alt="testimonials-pic">
                         </picture>
                     </div>
                 </section>
             </section>
         </section>
-        <section class="strong-points-section" id="strong-points">
-            <div class="strong-points-section-header">
-                <h3 class="strong-points-section-header-text">Strong points</h3>
+        <section class="strong-points" id="strong-points">
+            <div class="strong-points__header">
+                <h3 class="strong-points__text">Strong points</h3>
             </div>
-            <section class="strong-points-section-container">
-                <section class="strong-points-section-content">
-                    <div class="strong-points-pic-container">
+            <section class="strong-points__info">
+                <section class="strong-points__content">
+                    <div class="strong-points__pic">
                         <picture>
                             <source srcset="img/tablet/strong-points-pic-1-dawid-liberadzki-tablet.jpg"
                                 media="(max-width: 768px)">
                             <img src="img/strong-points-pic-1-dawid-liberadzki.jpg"
-                                alt="strong-points-pic-1-dawid-liberadzki" class="strong-points-pic">
+                                alt="strong-points-pic-1-dawid-liberadzki" class="strong-points__img">
                         </picture>
                     </div>
-                    <div class="strong-points-pic-container">
+                    <div class="strong-points__pic">
                         <picture>
                             <source srcset="img/tablet/strong-points-pic-2-avery-klein-tablet.jpg"
                                 media="(max-width: 768px)">
                             <img src="img/strong-points-pic-2-avery-klein.jpg" alt="strong-points-pic-2-avery-klein"
-                                class="strong-points-pic">
+                                class="strong-points__img">
                         </picture>
                     </div>
-                    <section class="strong-points-text">
+                    <section class="strong-points__skills">
                         <h2>Strengths</h2>
-                        <ul class="quote strength-list">
+                        <ul class="strong-points__list">
                             <li>Interiors</li>
                             <li>Outdoors</li>
                             <li>Portraits</li>
@@ -213,27 +220,27 @@
                             <li>Nature</li>
                         </ul>
                     </section>
-                    <div class="strong-points-pic-container">
+                    <div class="strong-points__pic">
                         <img src="img/strong-points-pic-3-keghan-crossland.jpg"
-                            alt="strong-points-pic-3-keghan-crossland" class="strong-points-pic">
+                            alt="strong-points-pic-3-keghan-crossland" class="strong-points__img">
                     </div>
-                    <div class="strong-points-pic-container">
+                    <div class="strong-points__pic">
                         <img src="img/strong-points-pic-4-avery-klein.jpg" alt="strong-points-pic-4-avery-klein"
-                            class="strong-points-pic">
+                            class="strong-points__img">
                     </div>
                 </section>
             </section>
         </section>
     </main>
-    <footer>
-        <p class="footer-contacts">
+    <footer class="footer">
+        <p class="footer__contacts">
             <a href="tel:+79211234567">+7 921 123-45-67</a><br>
             <a href="mailto:info@modstudio.com">info@modstudio.com</a>
         </p>
-        <p class="footer-logo">
-            A product of <span class="footer-logo-name">MOD</span>
+        <p class="footer__logo">
+            A product of <span class="footer__name">MOD</span>
         </p>
-        <p class="footer-pricing">
+        <p class="footer__pricing">
             <a href="Pricing">© 2023 Mod Media. All rights reserved</a>
         </p>
     </footer>

@@ -1,0 +1,41 @@
+.hero {
+    min-height: 630px;
+    @include flex-settings(flex, column);
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 150px;
+    max-width: 1400px;
+}
+
+.hero__content {
+    @include flex-settings(flex, column);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: #ffffff;
+    width: 690px;
+    height: 360px;
+}
+
+.hero__image {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+    max-height: 630px;
+    max-width: 700px;
+    object-fit: cover;
+}
+
+.hero__header {
+    font-family: "Playfair Display", serif;
+    @include font-dimensions(500, 86px);
+    margin-bottom: 0;
+}
+
+.hero__text {
+    @include font-settings("Roboto", serif, auto, normal, "wdth", 100);
+    @include font-dimensions(500, 20px);
+    margin-bottom: 60px;
+}

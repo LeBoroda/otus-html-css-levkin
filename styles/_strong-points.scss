@@ -1,0 +1,79 @@
+.strong-points {
+    @include flex-settings(flex, column);
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 40px;
+    margin-bottom: 140px;
+}
+
+.strong-points__info {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+.strong-points__content {
+    @include flex-settings(flex, column);
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 20px;
+    height: 555px;
+}
+
+.strong-points__skills {
+    padding: 0 40px;
+}
+
+.strong-points__skills>h2 {
+    font-family: "Playfair Display", serif;
+    @include font-dimensions(500, 86px);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.strong-points__img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.strong-points__list {
+    font-family: "Bitter", serif;
+    @include font-dimensions(400, 34px);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    @include flex-settings(flex, column);
+    justify-content: center;
+}
+
+.strong-points__text {
+    @include font-settings("Roboto", serif, auto, normal, "wdth", 100);
+    @include font-dimensions(700, 24px);
+    line-height: 1.172;
+}
+
+@supports (display: grid) {
+    .strong-points {
+        display: grid;
+        grid-auto-rows: max-content;
+    }
+
+    .strong-points__content {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .strong-points__skills {
+        display: grid;
+        align-items: flex-start;
+    }
+
+    .strong-points__list {
+        font-family: "Bitter", serif;
+        font-weight: 400;
+        display: grid;
+        place-items: center;
+    }
+}
