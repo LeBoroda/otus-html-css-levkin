@@ -66,6 +66,20 @@ body {
 .header__menu-item > a {
   text-decoration: none;
   color: #000000;
+  position: relative;
+}
+.header__menu-item > a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #000;
+  transition: width 0.3s ease;
+}
+.header__menu-item > a:hover::before {
+  width: 100%;
 }
 .header__message-icon {
   background-color: white;
@@ -595,6 +609,11 @@ body {
   border: 1px solid #000000;
   border-radius: 7px;
   cursor: pointer;
+  transition: transform 1s ease;
+}
+
+.btn:hover {
+  transform: scale(105%);
 }
 
 .cancel {
@@ -636,14 +655,6 @@ input:invalid:out-of-range {
   outline: 2px solid red;
 }
 
-input:-moz-placeholder-shown {
-  outline: 2px solid grey;
-}
-
-input:placeholder-shown {
-  outline: 2px solid grey;
-}
-
 @media screen and (min-width: 450px) and (max-width: 768px) {
   html,
   body {
@@ -666,10 +677,17 @@ input:placeholder-shown {
   .header__menu-item {
     font-size: 0;
   }
+  .header__menu-item > a {
+    position: inherit;
+  }
   .header__menu-item::first-letter {
     font-weight: 400;
     font-size: 40px;
     font-family: "Bitter", serif;
+  }
+  .header__menu-item > a:hover {
+    transition: color 0.5s ease;
+    color: #A07C72;
   }
   .header__menu {
     box-sizing: border-box;
@@ -961,6 +979,9 @@ input:placeholder-shown {
   .header__menu-item {
     font-size: 0;
   }
+  .header__menu-item > a {
+    position: inherit;
+  }
   .header__menu-item::first-letter {
     font-family: "Bitter", serif;
     font-weight: 400;
@@ -973,6 +994,10 @@ input:placeholder-shown {
   }
   .header__message {
     margin: 0 6% 0 5%;
+  }
+  .header__menu-item > a:hover {
+    transition: color 0.5s ease;
+    color: #A07C72;
   }
   .hero {
     height: 685px;

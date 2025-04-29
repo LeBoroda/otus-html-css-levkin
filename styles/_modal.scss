@@ -73,6 +73,11 @@
   border: 1px solid #000000;
   border-radius: 7px;
   cursor: pointer;
+  transition: transform 1.0s ease;
+}
+
+.btn:hover{
+  transform: scale(105%);
 }
 
 .cancel {
@@ -116,8 +121,4 @@ textarea:invalid:focus,
 input:invalid:focus,
 input:invalid:out-of-range {
   outline: 2px solid red;
-}
-
-input:placeholder-shown{
-  outline: 2px solid grey;
 }

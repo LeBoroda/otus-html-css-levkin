@@ -16,26 +16,37 @@ body {
     @include flex-settings(flex, row);
     justify-content: space-between;
     height: 82px;
+
+    &__menu-item {
+        font-size: 0;
+    }
+
+    &__menu-item>a{
+        position: inherit;
+    }
+
+    &__menu-item::first-letter {
+        font-family: "Bitter", serif;
+        @include font-dimensions(400, 40px);
+    }
+
+    &__menu {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__message {
+        margin: 0 6% 0 5%;
+    }
+
+    &__menu-item > a:hover {
+        transition: color 0.5s ease;
+        color: #A07C72;
+    }
+
 }
 
-.header__menu-item {
-    font-size: 0;
-}
-
-.header__menu-item::first-letter {
-    font-family: "Bitter", serif;
-    @include font-dimensions(400, 40px);
-}
-
-.header__menu {
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-}
-
-.header__message {
-    margin: 0 6% 0 5%;
-}
 
 .hero {
     height: 685px;
