@@ -153,10 +153,10 @@ body {
 
 .biography__quote {
     @include font-dimensions(300, 30px);
-    &_mobile {
+    &-mobile {
         display: block;
     }
-    &_desktop {
+    &-desktop {
         display: none;
     }
 }
@@ -259,10 +259,10 @@ body {
     @include font-dimensions(300, 30px);
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
-    &_mobile {
+    &-mobile {
         display: block;
     }
-    &_desktop {
+    &-desktop {
         display: none;
     }
 }
