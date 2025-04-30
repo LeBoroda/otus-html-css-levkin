@@ -124,7 +124,7 @@ body {
 .biography__content {
     width: 97%;
     order: 1;
-    padding-left: 20px;
+    padding-left: 3%;
 }
 
 .biography__image {
@@ -153,10 +153,10 @@ body {
 
 .biography__quote {
     @include font-dimensions(300, 30px);
-    &_mobile {
+    &-mobile {
         display: block;
     }
-    &_desktop {
+    &-desktop {
         display: none;
     }
 }
@@ -234,10 +234,13 @@ body {
 .testimonials__links {
     @include flex-settings(flex, row);
     padding-top: 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
 }
 
 .testimonials__link {
     transform: none;
+    max-width: 30%;
 }
 
 .testimonials__content {
@@ -249,12 +252,16 @@ body {
     @include font-dimensions(300, 30px);
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
-    &_mobile {
+    &-mobile {
         display: block;
     }
-    &_desktop {
+    &-desktop {
         display: none;
     }
+}
+
+.testimonials__quote-pic img {
+    max-width: 100%;
 }
 
 .strong-points {

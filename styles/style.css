@@ -38,8 +38,8 @@ body {
   font-variation-settings: "wdth" 100;
   display: flex;
   height: 135px;
-  max-width: 100vw;
-  padding: 20px 50px;
+  max-width: 100%;
+  padding: 20px 4.5%;
   justify-content: space-between;
   align-items: center;
   margin-bottom: -17px;
@@ -58,10 +58,10 @@ body {
   font-size: 24px;
   line-height: 1.172;
   display: flex;
-  gap: 48px;
+  gap: 4.5%;
   list-style-type: none;
   justify-content: end;
-  margin: 15px;
+  margin: 1%;
 }
 .header__menu-item > a {
   text-decoration: none;
@@ -201,7 +201,7 @@ body {
   font-size: 26px;
   margin: 0;
 }
-.biography__quote_mobile {
+.biography__quote-mobile {
   display: none;
 }
 .biography__header {
@@ -298,7 +298,7 @@ body {
   display: grid;
   max-width: 1400px;
   box-sizing: border-box;
-  grid-template-columns: 119px 1fr;
+  grid-template-columns: 9.5% 1fr;
   margin: auto;
   margin-bottom: 140px;
 }
@@ -307,7 +307,6 @@ body {
   grid-column: 2;
   display: flex;
   box-sizing: border-box;
-  grid-template-columns: 20fr 1fr 16fr;
 }
 
 .testimonials__header {
@@ -330,7 +329,7 @@ body {
   order: 0;
   grid-column: 1/2;
   display: grid;
-  grid-template-columns: 98px 1fr;
+  grid-template-columns: 1fr 35fr;
 }
 
 .testimonials__content {
@@ -343,10 +342,19 @@ body {
 }
 
 .testimonials__links {
+  max-width: 98px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   grid-template-columns: 1fr 1fr;
+}
+
+.testimonials__pic {
+  align-self: last baseline;
+}
+
+.testimonials__pic img {
+  width: 100%;
 }
 
 .testimonials__link {
@@ -384,7 +392,7 @@ body {
   grid-column: 2/3;
   text-align: center;
 }
-.testimonials__quote_mobile {
+.testimonials__quote-mobile {
   display: none;
 }
 
@@ -763,7 +771,7 @@ input:invalid:out-of-range {
   .biography__content {
     width: 97%;
     order: 1;
-    padding-left: 20px;
+    padding-left: 3%;
   }
   .biography__image {
     width: 100%;
@@ -790,10 +798,10 @@ input:invalid:out-of-range {
     font-weight: 300;
     font-size: 30px;
   }
-  .biography__quote_mobile {
+  .biography__quote-mobile {
     display: block;
   }
-  .biography__quote_desktop {
+  .biography__quote-desktop {
     display: none;
   }
   .biography__content > h2::before {
@@ -861,9 +869,12 @@ input:invalid:out-of-range {
     display: flex;
     flex-direction: row;
     padding-top: 10px;
+    max-width: 100%;
+    flex-wrap: wrap;
   }
   .testimonials__link {
     transform: none;
+    max-width: 30%;
   }
   .testimonials__content {
     order: 1;
@@ -876,11 +887,14 @@ input:invalid:out-of-range {
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
   }
-  .testimonials__quote_mobile {
+  .testimonials__quote-mobile {
     display: block;
   }
-  .testimonials__quote_desktop {
+  .testimonials__quote-desktop {
     display: none;
+  }
+  .testimonials__quote-pic img {
+    max-width: 100%;
   }
   .strong-points {
     max-width: 100%;
@@ -1091,10 +1105,10 @@ input:invalid:out-of-range {
     font-weight: 300;
     font-size: 30px;
   }
-  .biography__quote_mobile {
+  .biography__quote-mobile {
     display: block;
   }
-  .biography__quote_desktop {
+  .biography__quote-desktop {
     display: none;
   }
   .biography__content > h2::before {
@@ -1187,10 +1201,10 @@ input:invalid:out-of-range {
     align-self: flex-start;
     margin: 5% 5% 0 1.39%;
   }
-  .testimonials__quote_mobile {
+  .testimonials__quote-mobile {
     display: block;
   }
-  .testimonials__quote_desktop {
+  .testimonials__quote-desktop {
     display: none;
   }
   .strong-points {
